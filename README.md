@@ -6,12 +6,10 @@
 - JDK: Ensemble d'outils nécessaires au développement (regroupe le JSE et outils de compilation (**javac**), JRE, outil de création jar: extension .jar = ). Pour les développeurs. Java Development Kit.
 - JRE: plateforme Java, Java Runtime Envirronement, environnement d'exécution. Pour les user d'application, sans les développer.
 
->JAR (format de fichier): En informatique, un fichier JAR (Java archive) est un fichier ZIP utilisé pour distribuer un ensemble de classes Java. Ce format est utilisé pour stocker les définitions des classes, ainsi que des métadonnées, constituant l'ensemble d'un programme.
 
 [Java SE](https://www.oracle.com/fr/java/) ->
 JDK Development Kit 20.0.1 downloads: 	
 https://download.oracle.com/java/20/latest/jdk-20_windows-x64_bin.exe (sha256)
-
 
 Variables environnement: 
 chemin javac, dans variables système, path. **Penser à ajouter après bin\javac.exe**.
