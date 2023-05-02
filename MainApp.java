@@ -1,4 +1,4 @@
-/**class MainApp {
+ /**class MainApp {
 
 }
  * ou
@@ -7,18 +7,6 @@ class MainApp
 
 }
  */
-
-
-//Commentaires:
-//Pour un commentaire sur une seule ligne
-
-/*En bloc,
-*djzhfijfh
-*/
-
-/** commentaires de documentation*/
-
-
 class MainApp 
 {
     public static void main (String[] args)
@@ -28,7 +16,7 @@ class MainApp
     *Dans méthode main de type void, on peut placer des arguments. Mais Java doit reconnaître la signature.
     *static est accessible ici
     */
-        System.out.println("Hello You !!!");
+        System.out.println("Hello You!!!");
         //System.out.println('Hello You !!!');
     //équivalent de console.log, on doit indiquer la sortie
     //System est un objet auquel on applique la méthode println
