@@ -54,7 +54,7 @@ public class MainApp
 *}
 */
 
-public class MainApp 
+/*public class MainApp 
 {
     public static void main (String[] args)
     {
@@ -77,4 +77,32 @@ public class MainApp
         // rien ne s'affiche car pas invoqué dans main, il faut l'invoquer dans la méthode main
     }
 }
-// "index" appelé, exécuté, la méthode main sera exécuté, c'est l'index de l'index
+// "index" appelé, exécuté, la méthode main sera exécutée, c'est l'index de l'index
+*/
+
+
+/*public class MainApp 
+{
+    public static void main (String[] args)
+    {
+        final int MAVARIABLE = 36;
+        System.out.println(MAVARIABLE); 
+        /*MAVARIABLE = 37;
+        *System.out.println(MAVARIABLE);
+        *error because const
+    }
+*}
+*/
+
+public class MainApp 
+{
+    public static void main (String[] args)
+    {
+        // final float PI = 3.14;
+        // error
+        // final double PI = 3.14;
+        final float PI = 3.14f;
+        // https://www.sololearn.com/Discuss/749938/in-java-float-a-1-1f-what-is-this-f-stands-for
+        // . Attribuez une valeur à la variable. Lorsque vous affectez un nombre à virgule flottante à un `float`, ajoutez un `f` ou `F` au nombre pour indiquer au compilateur qu'il s'agit d'une valeur à virgule flottante simple précision.
+    }
+}
