@@ -1,5 +1,8 @@
 # Exercice découverte Java
 
+Dans cet exercice nous allons découvrir Java, la classe Main.
+Nous allons installer l'environnement de travail via JDK, les variables d'envirronement...
+Utiliser PowerShell pour compiler et exécuter le code.
 ## Mise en place
 
 - JSE: environnement d'exécution standard de jJava, outils, bibliothèques...  Java Standard Edition.
@@ -9,14 +12,14 @@
 
 [Java SE](https://www.oracle.com/fr/java/) ->
 JDK Development Kit 20.0.1 downloads: 	
-https://download.oracle.com/java/20/latest/jdk-20_windows-x64_bin.exe (sha256)
+[jdk install](https://download.oracle.com/java/20/latest/jdk-20_windows-x64_bin.exe) (sha256)
 
 Variables environnement: 
 chemin javac, dans variables système, path. **Penser à ajouter après bin\javac.exe**.
 
 Dans commande (wndows r):
 javac.exe
-java - version
+java -version
 
 En JS, l'on a vu les constructeurs.
 En Java, on utilisera les objets, méthodes, classes ...

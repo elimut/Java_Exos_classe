@@ -102,6 +102,7 @@ public class MainApp
         // error
         // final double PI = 3.14;
         final float PI = 3.14f;
+        System.out.println(PI);
         // https://www.sololearn.com/Discuss/749938/in-java-float-a-1-1f-what-is-this-f-stands-for
         // . Attribuez une valeur à la variable. Lorsque vous affectez un nombre à virgule flottante à un `float`, ajoutez un `f` ou `F` au nombre pour indiquer au compilateur qu'il s'agit d'une valeur à virgule flottante simple précision.
     }
