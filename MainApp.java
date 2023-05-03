@@ -26,14 +26,6 @@
 *}
 */
 
-/*
-*\n retour à la ligne
-*\t tabulation
-*\f nouvelle page (file)
-*\r retour chariot avec saut de ligne
-*\b retour en arrière
-*\00 
-*/
 
 /*
 public class MainApp 
@@ -62,7 +54,6 @@ public class MainApp
         // décla d'une variable entier
         // déclaration variable pas d'espace, accent, espace. Commence par une lettre ou underscore. camelCase ou snake_case
         System.out.println(maVariable);
-        // attention dans méthode main -> argument de type String attendu, affiche 36
         maVariable = 37;
         System.out.println(maVariable);
         maVariable = maVariable + 1;
@@ -94,16 +85,57 @@ public class MainApp
 *}
 */
 
+/*public class MainApp 
+*{
+*    public static void main (String[] args)
+*    {
+*        // final float PI = 3.14;
+*        // error
+*        // final double PI = 3.14;
+*        final float PI = 3.14f;
+*        System.out.println(PI);
+*        // https://www.sololearn.com/Discuss/749938/in-java-float-a-1-1f-what-is-this-f-stands-for
+*        // . Attribuez une valeur à la variable. Lorsque vous affectez un nombre à virgule flottante à un `float`, ajoutez un `f` ou `F` au nombre pour indiquer au compilateur qu'il s'agit d'une valeur à virgule flottante simple précision.
+*    }
+*}
+*/
+
+
 public class MainApp 
 {
     public static void main (String[] args)
     {
-        // final float PI = 3.14;
-        // error
-        // final double PI = 3.14;
-        final float PI = 3.14f;
-        System.out.println(PI);
-        // https://www.sololearn.com/Discuss/749938/in-java-float-a-1-1f-what-is-this-f-stands-for
-        // . Attribuez une valeur à la variable. Lorsque vous affectez un nombre à virgule flottante à un `float`, ajoutez un `f` ou `F` au nombre pour indiquer au compilateur qu'il s'agit d'une valeur à virgule flottante simple précision.
+        /*boolean value = (24 == 24);
+        *System.out.println(value);
+        //renvoie true
+        *boolean value1 = (24 === 24);
+        *System.out.println(value);*/
+        // renvoie true
+        //comparaison d'expression
+        // int age = 24;
+        // int age1 = 20;
+        // boolean value = (age == age1);
+        // System.out.println(value);
+        // envoie false
+        /*int age2 = 24;
+        *int age3 = 24;
+        *boolean value1 = (age2 === age3);
+        *System.out.println(value1);*/
+        // renvoie true*/
+        int value4 = 24;
+        if (value4 == 24){
+            System.out.println(value4);
+        }
+        // renvoie 24
+        /*if (value4 == 24){
+        *    System.out.println(value4);
+        *}*/
+        // ne renvoie rien
+        int ageAd = 15;
+        if (ageAd >= 18 && ageAd < 64){
+            System.out.println(ageAd);
+        }else{
+            System.out.println("non");
+        }
     }
 }
