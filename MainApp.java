@@ -100,42 +100,106 @@ public class MainApp
 *}
 */
 
-
-public class MainApp 
-{
+// Conditions
+/*public class MainApp 
+*{
     public static void main (String[] args)
     {
         /*boolean value = (24 == 24);
         *System.out.println(value);
         //renvoie true
+
         *boolean value1 = (24 === 24);
         *System.out.println(value);*/
         // renvoie true
         //comparaison d'expression
-        // int age = 24;
-        // int age1 = 20;
-        // boolean value = (age == age1);
-        // System.out.println(value);
+
+        /* int age = 24;
+        * int age1 = 20;
+        * boolean value = (age == age1);
+        * System.out.println(value);*/
         // envoie false
+
         /*int age2 = 24;
         *int age3 = 24;
         *boolean value1 = (age2 === age3);
         *System.out.println(value1);*/
         // renvoie true*/
-        int value4 = 24;
-        if (value4 == 24){
-            System.out.println(value4);
-        }
+        /*int value4 = 24;
+        *if (value4 == 24){
+        *    System.out.println(value4);
+        *}*/
         // renvoie 24
         /*if (value4 == 24){
         *    System.out.println(value4);
         *}*/
         // ne renvoie rien
-        int ageAd = 15;
-        if (ageAd >= 18 && ageAd < 64){
-            System.out.println(ageAd);
-        }else{
-            System.out.println("non");
+
+        /*int ageAd = 20;
+        *if (ageAd >= 18 && ageAd < 64){
+        *    System.out.println(ageAd);
+        *}else{
+        *    System.out.println("non");
+        *}
+        *ou
+        *if (ageAd >= 18 && ageAd < 64)
+        *    System.out.println(ageAd);
+        *else
+        *    System.out.println("non");
+        *ou
+        *String result = (ageAd >= 18 && ageAd < 64) ? "ageAd" : "non"; 
+        *System.out.println(result);*/
+
+        //S'il est majeur, on vérifie qu'il a la majorité internationale
+        /*if (ageAd >= 18 && ageAd < 64){
+        *    System.out.println("Vous êtes majeur");
+        *    if(ageAd >= 21){
+        *        System.out.println("Vous êtes majeur dans tous les pays");   
+        *    }else{
+        *        System.out.println(" en France seulement");
+        *    }
+        *}else{
+        *    System.out.println("mineur");
+        *}*/
+
+        /*switch (ageAd){
+            case 17:
+                System.out.println("mineur");
+                break;
+            case 18, 19, 20:
+                System.out.println("majeur en France");
+                break;
+            default:
+                System.out.println("majeur dans tous les pays");
+                break;
+        }
+    }
+}*/
+
+// Boucles
+public class MainApp 
+{
+    public static void main (String[] args)
+    {
+        /*int i = 0;
+        while(i != 20){
+            System.out.println(i);
+            // i != 2 => boucle infinie, aucune condition d'arrêt: ajout d'incrémentation ou valeur pour en sortir
+            // i+=2;
+            // si l'on met un break à la place de i+=2 => une seule exécution
+            if (i == 10){
+                break;
+            }
+            i++;
+            // si i différent de 20, je renvoie i et si i == 10 stop
+        }*/
+        int i = 0;
+        while(i != 20){
+            if (i == 10){
+                continue;
+            }
+            i++;
+            System.out.println(i);
         }
     }
 }
