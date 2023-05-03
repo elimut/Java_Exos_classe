@@ -186,29 +186,96 @@
 */
 
 // Boucles
+/*
 public class MainApp 
 {
     public static void main (String[] args)
     {
-        /*int i = 0;
-        *while(i != 20){
-        *    System.out.println(i);
-        *    // i != 2 => boucle infinie, aucune condition d'arrêt: ajout d'incrémentation ou valeur pour en sortir
-        *    // i+=2;
-        *    // si l'on met un break à la place de i+=2 => une seule exécution
-        *    if (i == 10){
-        *        break;
-        *    }
-        *    i++;
-        *    // si i différent de 20, je renvoie i et si i == 10 stop
-        }*/
+        int i = 0;
+        while(i != 20){
+            System.out.println(i);
+            // i != 2 => boucle infinie, aucune condition d'arrêt: ajout d'incrémentation ou valeur pour en sortir
+            // i+=2;
+            // si l'on met un break à la place de i+=2 => une seule exécution
+            if (i == 10){
+                break;
+            }
+            i++;
+            // si i différent de 20, je renvoie i et si i == 10 stop
+        }
         int i = 0;
         while(i != 20){
             if (i == 10){
                 continue;
+                // continueinstruction interrompt une itération (dans la boucle), si une condition spécifiée se produit, et continue avec l'itération suivante dans la boucle.
             }
             i++;
             System.out.println(i);
         }
+    }
+}
+*/
+
+/*
+*public class MainApp 
+*{
+*    public static void main (String[] args)
+*    {
+*        int i = 0;
+*        do{
+*            i++;
+*            if (i == 10){
+*                continue;
+*            }
+*            System.out.println(i);
+*        }
+*        while(i != 20);
+*    }
+*}
+*/
+
+/*
+*public class MainApp 
+*{
+    public static void main (String[] args)
+    {
+        int i = 0;
+        do{
+            i++;
+            if (i % 2 != 0){
+                continue;
+            }
+            System.out.println(i);
+        }
+        while(i != 20);
+    }
+    // affiche les nombres pairs, continu bloque les impairs suite à la condition if
+}
+*/
+
+//afficher saisie user: scanner. Pour que Java puisse lire ce que vous tapez au clavier, vous allez devoir utiliser un objet de type Scanner. Cet objet peut prendre différents paramètres. !import -> toujours en haut du code
+import java.util.Scanner;
+public class MainApp 
+{
+    public static void main (String[] args)
+    {
+        Scanner valeurDebut = new Scanner(System.in);
+        // instance de scanner
+        System.out.println("Veuillez saisir un entier :");
+        int i = valeurDebut.nextInt();
+        Scanner valeurFin = new Scanner(System.in);
+        System.out.println("Veuillez saisir un entier :");
+        int fin = valeurFin.nextInt();
+        
+        System.out.println("Vous avez choisi: " + i +" "+ fin + ",les valeurs paires entre ces chiffres sont:");
+
+        do{
+            i++;
+            if (i % 2 != 0){
+                continue;
+            }
+            System.out.println(i);
+        }
+        while(i != fin);
     }
 }
