@@ -185,6 +185,8 @@
 *}
 */
 
+
+
 // Boucles
 /*
 public class MainApp 
@@ -254,7 +256,7 @@ public class MainApp
 */
 
 //afficher saisie user: scanner. Pour que Java puisse lire ce que vous tapez au clavier, vous allez devoir utiliser un objet de type Scanner. Cet objet peut prendre différents paramètres. !import -> toujours en haut du code
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class MainApp 
 {
     public static void main (String[] args)
@@ -266,16 +268,34 @@ public class MainApp
         Scanner valeurFin = new Scanner(System.in);
         System.out.println("Veuillez saisir un entier :");
         int fin = valeurFin.nextInt();
+        valeurDebut.close();
+        valeurFin.close();
+        // attention à la fermeture du scanner
         
-        System.out.println("Vous avez choisi: " + i +" "+ fin + ",les valeurs paires entre ces chiffres sont:");
-
-        do{
-            i++;
-            if (i % 2 != 0){
-                continue;
+        if (i > fin){
+            System.out.println("la valeur de début doit être plus petite que celle de fin");
+        }
+        else{
+            System.out.println("Vous avez choisi: " + i +" "+ fin + ",les valeurs paires entre ces chiffres sont:");
+            do{
+                i++;
+                if (i % 2 != 0){
+                    continue;
+                }
+                System.out.println(i);
             }
+            while(i != fin);
+        }
+    }
+}
+*/
+
+public class MainApp 
+{
+    public static void main (String[] args)
+    {
+        for (int i = 0; i < 10; i++){
             System.out.println(i);
         }
-        while(i != fin);
     }
 }
