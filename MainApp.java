@@ -257,45 +257,48 @@ public class MainApp
 
 //afficher saisie user: scanner. Pour que Java puisse lire ce que vous tapez au clavier, vous allez devoir utiliser un objet de type Scanner. Cet objet peut prendre différents paramètres. !import -> toujours en haut du code
 /*import java.util.Scanner;
-public class MainApp 
-{
-    public static void main (String[] args)
-    {
-        Scanner valeurDebut = new Scanner(System.in);
-        // instance de scanner
-        System.out.println("Veuillez saisir un entier :");
-        int i = valeurDebut.nextInt();
-        Scanner valeurFin = new Scanner(System.in);
-        System.out.println("Veuillez saisir un entier :");
-        int fin = valeurFin.nextInt();
-        valeurDebut.close();
-        valeurFin.close();
-        // attention à la fermeture du scanner
-        
-        if (i > fin){
-            System.out.println("la valeur de début doit être plus petite que celle de fin");
-        }
-        else{
-            System.out.println("Vous avez choisi: " + i +" "+ fin + ",les valeurs paires entre ces chiffres sont:");
-            do{
-                i++;
-                if (i % 2 != 0){
-                    continue;
-                }
-                System.out.println(i);
-            }
-            while(i != fin);
-        }
-    }
-}
+*public class MainApp 
+*{
+*    public static void main (String[] args)
+*    {
+*        Scanner valeurDebut = new Scanner(System.in);
+*        // instance de scanner
+*        System.out.println("Veuillez saisir un entier :");
+*        int i = valeurDebut.nextInt();
+*        Scanner valeurFin = new Scanner(System.in);
+*        System.out.println("Veuillez saisir un entier :");
+*        int fin = valeurFin.nextInt();
+*        valeurDebut.close();
+*        valeurFin.close();
+*        // attention à la fermeture du scanner
+*        
+*        if (i > fin){
+*            System.out.println("la valeur de début doit être plus petite que celle de fin");
+*        }
+*        else{
+*            System.out.println("Vous avez choisi: " + i +" "+ fin + ",les valeurs paires entre ces chiffres sont:");
+*            do{
+*                i++;
+*                if (i % 2 != 0){
+*                    continue;
+*                }
+*                System.out.println(i);
+*            }
+*            while(i != fin);
+*        }
+*    }
+*}
 */
 
 public class MainApp 
 {
     public static void main (String[] args)
     {
+        
         for (int i = 0; i < 10; i++){
             System.out.println(i);
         }
+        
+        // L’itération sur une collection à l’aide de structures de boucles traditionnelles comme la boucle for exige de connaître le nombre exact d’éléments dans la collection et elle permet également d’introduire des erreurs. Ce qui n’est pas du tout souhaité, surtout lorsque l’on traite du Big Data, car en plus de traiter une masse importante de données, la moindre erreur peut être fatale.
     }
 }
