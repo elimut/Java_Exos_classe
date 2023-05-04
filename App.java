@@ -51,8 +51,6 @@ public class App
         // 55
         // System.out.println(c.mName);
         // error the fiel Cht.mName is not visible car en private = encapsulé
-        Chien paul = new Chien("Paul", 5, true);
-        Chien pascal = new Chien("Pascal", 5, false);
         name(c);
         user(c);
     }
@@ -74,8 +72,34 @@ public class App
         System.out.println("Veuillez saisir m pour faire miauler le chat sinon y pour faire aboyer le chien");
         String i = saisieUser.nextLine();
         String miaule = "m";
-        System.out.println((i.equals(miaule)) ? "Le chat "+ chat.getName()+" fait miaou-miaou"  : "Le chien fait ouaf_ouaf");
+        System.out.println((i.equals(miaule)) ? "Le chat "+ chat.getName() +" fait miaou-miaou"  : "Le chien fait ouaf_ouaf");
         // La equals()méthode compare deux chaînes et renvoie true si les chaînes sont égales et false sinon.
     }
 }
 // Le constructeur a une mission primordiale: être le patron, tous les arguments doivent être présent
+
+/*
+ * public static void presentation(Chat chat) {
+    String question = "Voulez vous que je miaule? (y/n)";
+    boolean continuePresentation = true;
+    do {
+        System.out.println(question);
+        Scanner saisieUtilisateur = new Scanner(System.in);
+        String resp = saisieUtilisateur.next();
+
+        if (resp.equals("y")) {
+            System.out.println(chat.getName() + "miaou");
+            continuePresentation = false;
+            saisieUtilisateur.close();
+        } else if (resp.equals("n")) {
+                System.out.println("bye");
+                continuePresentation = false;
+                saisieUtilisateur.close();
+        } else {
+            question = "Je n'ai pas compris, y ou n?;
+            continuePresentation = true;
+        }       
+    }
+    while(continuePresentation);
+}
+ */
