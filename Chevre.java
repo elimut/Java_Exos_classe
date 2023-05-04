@@ -3,6 +3,7 @@ public class Chevre extends Animal {
     
     public Chevre(String type, String cri, int patte, boolean queue, boolean chauve ){
         super(type, cri, patte, queue);
+        this.aChauve = chauve;
     }
 }
 // The extends keyword extends a class (indicates that a class is inherited from another class).In Java, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:subclass (child) - the class that inherits from another classsuperclass (parent) - the class being inherited fromTo inherit from a class, use the extends keyword.
