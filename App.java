@@ -53,6 +53,7 @@ public class App
         // error the fiel Cht.mName is not visible car en private = encapsulé
         name(c);
         user(c);
+        // presentation(c);
     }
 
     public static void name(Chat chat)
