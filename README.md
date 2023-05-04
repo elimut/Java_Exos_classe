@@ -65,3 +65,5 @@ Mot clef this.
 
 Dans App: création instance de chat.
 
+Getter/setter
+Utilisation des classes et instances de classes dans appli.
