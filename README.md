@@ -3,6 +3,7 @@
 Dans cet exercice nous allons découvrir Java, la classe Main.
 Nous allons installer l'environnement de travail via JDK, les variables d'envirronement...
 Utiliser PowerShell pour compiler et exécuter le code.
+
 ## Mise en place
 
 - JSE: environnement d'exécution standard de jJava, outils, bibliothèques...  Java Standard Edition.
@@ -54,4 +55,13 @@ Ensuite, saisie de javac ./MainApp.java pour compiler le code.
 
 Le code pourra être exécuté => java MainApp
 ![compilation](img/3-execution.PNG)
+
+Compiler toute l'appli: dans dossier => javac *.java
+
+## Chat.java et Chien.java
+
+Construction de classes, constructeur.
+Mot clef this.
+
+Dans App: création instance de chat.
 
