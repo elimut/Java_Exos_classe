@@ -40,7 +40,7 @@ c'est le point de départ du programme, le point d'entrée
 // Chaque instance de chat aura un emplacement dans la mémoire qui lui est dédié, d'où l'id. Ces espaces sont différents, donc chacun peut faire une action différente de l'autre en même temps.
 
 import java.util.Scanner;
-
+// import bibliothèque interne de Java 
 public class App 
 {
     public static void main(String[] args)
@@ -51,9 +51,11 @@ public class App
         // 55
         // System.out.println(c.mName);
         // error the fiel Cht.mName is not visible car en private = encapsulé
-        name(c);
-        user(c);
+        // name(c);
+        // user(c);
         // presentation(c);
+        felix.setVaccin(true);
+        System.out.println(felix.getVaccin());
     }
 
     public static void name(Chat chat)
@@ -76,6 +78,7 @@ public class App
         System.out.println((i.equals(miaule)) ? "Le chat "+ chat.getName() +" fait miaou-miaou"  : "Le chien fait ouaf_ouaf");
         // La equals()méthode compare deux chaînes et renvoie true si les chaînes sont égales et false sinon.
     }
+
 }
 // Le constructeur a une mission primordiale: être le patron, tous les arguments doivent être présent
 
