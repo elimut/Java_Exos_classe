@@ -67,7 +67,7 @@ public class Chat {
  
     public void setAge(int age) {
         this.mAge = age;
-        // si return: ne permet pas de maj depuis l'extérieur
+        // si return: ne permet pas de maj depuis l'extérieur 
     }
 
     public boolean getVaccin() {

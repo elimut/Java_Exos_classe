@@ -1,16 +1,4 @@
 /*
-*class MainApp {
-*}
-*ou
-*class MainApp 
-*{
-*}
-*/
-
-
-
-
-/*
 *En langage orienté objet nous sommes obligé d'avoir au minimum une classe (classe minimale). Le code ne pourrait s'exécuter.
 *class MainApp 
 *{

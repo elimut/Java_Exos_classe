@@ -11,3 +11,6 @@ public class Animal {
         this.aQueue = queue;
     }
 }
+/*
+ * Constructeur de la classe Animal.
+ */

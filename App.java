@@ -7,7 +7,7 @@
  */
 
 /*
- * construction d'une classe:
+ * Construction d'une classe:
 création fichier .java, le nom sera donné à la classe. Chaque fichier correspond à une classe. Cela rend le code plus robuste, et maintenable
 La classe a une portée, pour la construction d'une classe, on commence toujours par préciser la **portée**:
 - **public**: classe accessible partout depuis mon application,
@@ -48,13 +48,15 @@ public class App
         Chat c = new Chat("David", 55, true);
         Chat felix = new Chat("Felix", 44, false);
         // System.out.println(c.mAge);
-        // 55
+        // => Affichage de l'attribut âge de c :55
         // System.out.println(c.mName);
-        // error the fiel Cht.mName is not visible car en private = encapsulé
+        // => error the fiel Cht.mName is not visible car en private = encapsulé
         // name(c);
+        // => appel fonction name pour le chat c
         // user(c);
         // presentation(c);
         felix.setVaccin(true);
+        //envoie données à l'objet felix
         System.out.println(felix.getVaccin());
     }
 
