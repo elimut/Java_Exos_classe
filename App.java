@@ -38,6 +38,7 @@ c'est le point de départ du programme, le point d'entrée
 */
 // Exécution App.java : Le chat fait miaou-miaou Chat@372f7a8d => identifiant de l'instance de Chat. Le nom et id de l'instance sont uniques.
 // Chaque instance de chat aura un emplacement dans la mémoire qui lui est dédié, d'où l'id. Ces espaces sont différents, donc chacun peut faire une action différente de l'autre en même temps.
+import SimpleTesting.Student;
 
 import java.util.Scanner;
 // import bibliothèque interne de Java 
@@ -58,6 +59,12 @@ public class App
         felix.setVaccin(true);
         //envoie données à l'objet felix
         System.out.println(felix.getVaccin());
+        System.out.println(felix);
+        Student student = new Student();
+        student.setName("Rohna");
+        student.setEmail("rohna@xyz.com");
+        System.out.println(student.getName());
+        System.out.println(student.getEmail());
     }
 
     public static void name(Chat chat)

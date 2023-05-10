@@ -51,7 +51,10 @@ Puis ls entrée pour avoir le dossier et son contenu.
 
 Ensuite, saisie de javac ./MainApp.java pour compiler le code.
 ![compilation](img/1-compilation_PowerShell.PNG)
-![compilation](img/2-MainApp.class.PNG)
+
+<p align="center" width="100%">
+    <img width="60%" src="img/2-MainApp.class.PNG">
+</p
 
 Le code pourra être exécuté => java MainApp
 ![compilation](img/3-execution.PNG)
